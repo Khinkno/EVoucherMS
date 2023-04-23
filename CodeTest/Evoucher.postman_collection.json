@@ -1,0 +1,638 @@
+{
+	"info": {
+		"_postman_id": "1b430e58-245b-43bd-a167-9850f71d8ca6",
+		"name": "Evoucher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateEvoucher",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbkBnbWFpbC5jb20iLCJuYmYiOjE2ODIyMTg3NzMsImV4cCI6MTY4MjMwNTE3MywiaWF0IjoxNjgyMjE4NzczfQ.AeLi5ing4Z5zeEFJvl22XxmWXQ_UVmMIvJMoCLOIU7VAUfhDltYFzI3Rb36Ja6QRfNRhCqIt8ah9pCQSUk8ghw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"title\": \"Promo\",\r\n  \"description\": \"Promo\",\r\n  \"expDate\": \"2023-04-23T06:21:17.483Z\",\r\n  \"image\": \"string\",\r\n  \"amount\": 30000,\r\n  \"qty\": 10,\r\n  \"isActive\": true,\r\n  \"paymentId\": 1,\r\n  \"name\": \"Khin Nwe Oo\",\r\n  \"phNo\": \"091234567\",\r\n  \"maxVouLimit\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7284/api/CMS/CreateEvoucher",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7284",
+					"path": [
+						"api",
+						"CMS",
+						"CreateEvoucher"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateEvoucher",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"title\": \"Promo\",\r\n  \"description\": \"Promo\",\r\n  \"expDate\": \"2023-04-23T06:21:17.483Z\",\r\n  \"image\": \"string\",\r\n  \"amount\": 30000,\r\n  \"qty\": 10,\r\n  \"isActive\": true,\r\n  \"paymentId\": 1,\r\n  \"name\": \"Khin Nwe Oo\",\r\n  \"phNo\": \"091234567\",\r\n  \"maxVouLimit\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7284/api/CMS/CreateEvoucher",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"api",
+								"CMS",
+								"CreateEvoucher"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Apr 2023 18:31:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"promoCode\": \"b33fb4a3-e5cd-47be-a37b-3b501b1d6f49\",\n    \"title\": \"Promo\",\n    \"description\": \"Promo\",\n    \"expDate\": \"2023-04-23T06:21:17.483Z\",\n    \"image\": \"string\",\n    \"amount\": 30000,\n    \"qty\": 10,\n    \"isActive\": true,\n    \"paymentId\": 1,\n    \"name\": \"Khin Nwe Oo\",\n    \"phNo\": \"091234567\",\n    \"maxVouLimit\": 0,\n    \"inuse\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateEvoucher",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbkBnbWFpbC5jb20iLCJuYmYiOjE2ODIyMTg3NzMsImV4cCI6MTY4MjMwNTE3MywiaWF0IjoxNjgyMjE4NzczfQ.AeLi5ing4Z5zeEFJvl22XxmWXQ_UVmMIvJMoCLOIU7VAUfhDltYFzI3Rb36Ja6QRfNRhCqIt8ah9pCQSUk8ghw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"title\": \"Promo-new\",\r\n  \"description\": \"Promo\",\r\n  \"expDate\": \"2023-04-23T06:21:17.483Z\",\r\n  \"image\": \"string\",\r\n  \"amount\": 30000,\r\n  \"qty\": 10,\r\n  \"isActive\": true,\r\n  \"paymentId\": 1,\r\n  \"name\": \"Khin Nwe Oo\",\r\n  \"phNo\": \"092345678\",\r\n  \"maxVouLimit\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7284/api/CMS/UpdateEvoucher",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7284",
+					"path": [
+						"api",
+						"CMS",
+						"UpdateEvoucher"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateEvoucher",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"title\": \"Promo-new\",\r\n  \"description\": \"Promo\",\r\n  \"expDate\": \"2023-04-23T06:21:17.483Z\",\r\n  \"image\": \"string\",\r\n  \"amount\": 30000,\r\n  \"qty\": 10,\r\n  \"isActive\": true,\r\n  \"paymentId\": 1,\r\n  \"name\": \"Khin Nwe Oo\",\r\n  \"phNo\": \"092345678\",\r\n  \"maxVouLimit\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7284/api/CMS/UpdateEvoucher",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"api",
+								"CMS",
+								"UpdateEvoucher"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Apr 2023 18:07:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"promoCode\": \"16c1e146-cb25-48d4-8928-46d0e5f5d70e\",\n    \"title\": \"Promo-new\",\n    \"description\": \"Promo\",\n    \"expDate\": \"2023-04-23T06:21:17.483Z\",\n    \"image\": \"string\",\n    \"amount\": 30000,\n    \"qty\": 10,\n    \"isActive\": true,\n    \"paymentId\": 1,\n    \"name\": \"Khin Nwe Oo\",\n    \"phNo\": \"092345678\",\n    \"maxVouLimit\": 5,\n    \"inuse\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "GetEvouchers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbkBnbWFpbC5jb20iLCJuYmYiOjE2ODIyMTg3NzMsImV4cCI6MTY4MjMwNTE3MywiaWF0IjoxNjgyMjE4NzczfQ.AeLi5ing4Z5zeEFJvl22XxmWXQ_UVmMIvJMoCLOIU7VAUfhDltYFzI3Rb36Ja6QRfNRhCqIt8ah9pCQSUk8ghw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7284/api/EStoreAPI/GetEvouchers?showActive=true",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7284",
+					"path": [
+						"api",
+						"EStoreAPI",
+						"GetEvouchers"
+					],
+					"query": [
+						{
+							"key": "showActive",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetEvouchers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7284/api/EStoreAPI/GetEvouchers?showActive=true",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"api",
+								"EStoreAPI",
+								"GetEvouchers"
+							],
+							"query": [
+								{
+									"key": "showActive",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Apr 2023 18:09:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"promoCode\": \"16c1e146-cb25-48d4-8928-46d0e5f5d70e\",\n        \"title\": \"Promo-new\",\n        \"description\": \"Promo\",\n        \"expDate\": \"2023-04-23T06:21:17.483Z\",\n        \"image\": \"string\",\n        \"amount\": 30000,\n        \"qty\": 10,\n        \"isActive\": true,\n        \"paymentId\": 1,\n        \"name\": \"Khin Nwe Oo\",\n        \"phNo\": \"092345678\",\n        \"maxVouLimit\": 5,\n        \"inuse\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetPaymentList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbkBnbWFpbC5jb20iLCJuYmYiOjE2ODIyMTg3NzMsImV4cCI6MTY4MjMwNTE3MywiaWF0IjoxNjgyMjE4NzczfQ.AeLi5ing4Z5zeEFJvl22XxmWXQ_UVmMIvJMoCLOIU7VAUfhDltYFzI3Rb36Ja6QRfNRhCqIt8ah9pCQSUk8ghw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7284/api/EStoreAPI/GetPaymentList",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7284",
+					"path": [
+						"api",
+						"EStoreAPI",
+						"GetPaymentList"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetPaymentList",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7284/api/EStoreAPI/GetPaymentList",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"api",
+								"EStoreAPI",
+								"GetPaymentList"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Apr 2023 18:11:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"paymentId\": 1,\n        \"paymentType\": \"Visa Card\",\n        \"disPercent\": 10\n    },\n    {\n        \"paymentId\": 2,\n        \"paymentType\": \"Master Card\",\n        \"disPercent\": 20\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "CheckOutItem",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbkBnbWFpbC5jb20iLCJuYmYiOjE2ODIyMTg3NzMsImV4cCI6MTY4MjMwNTE3MywiaWF0IjoxNjgyMjE4NzczfQ.AeLi5ing4Z5zeEFJvl22XxmWXQ_UVmMIvJMoCLOIU7VAUfhDltYFzI3Rb36Ja6QRfNRhCqIt8ah9pCQSUk8ghw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7284/api/EStoreAPI/CheckOutItem",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7284",
+					"path": [
+						"api",
+						"EStoreAPI",
+						"CheckOutItem"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CheckOutItem",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7284/api/EStoreAPI/CheckOutItem",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"api",
+								"EStoreAPI",
+								"CheckOutItem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Apr 2023 18:11:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"purchaseId\": 1,\n        \"price\": 1000,\n        \"qty\": 5,\n        \"amount\": 5000\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "SavePayment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbkBnbWFpbC5jb20iLCJuYmYiOjE2ODIyMTg3NzMsImV4cCI6MTY4MjMwNTE3MywiaWF0IjoxNjgyMjE4NzczfQ.AeLi5ing4Z5zeEFJvl22XxmWXQ_UVmMIvJMoCLOIU7VAUfhDltYFzI3Rb36Ja6QRfNRhCqIt8ah9pCQSUk8ghw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7284/api/EStoreAPI/SavePayment?EvoucherId=1&PaymentId=1&Name=Khin%20Nwe%20Oo&PhNo=0978654321&TotalAmount=30000",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7284",
+					"path": [
+						"api",
+						"EStoreAPI",
+						"SavePayment"
+					],
+					"query": [
+						{
+							"key": "EvoucherId",
+							"value": "1"
+						},
+						{
+							"key": "PaymentId",
+							"value": "1"
+						},
+						{
+							"key": "Name",
+							"value": "Khin%20Nwe%20Oo"
+						},
+						{
+							"key": "PhNo",
+							"value": "0978654321"
+						},
+						{
+							"key": "TotalAmount",
+							"value": "30000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SavePayment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7284/api/EStoreAPI/SavePayment?EvoucherId=1&PaymentId=1&Name=Khin%20Nwe%20Oo&PhNo=0978654321&TotalAmount=30000",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"api",
+								"EStoreAPI",
+								"SavePayment"
+							],
+							"query": [
+								{
+									"key": "EvoucherId",
+									"value": "1"
+								},
+								{
+									"key": "PaymentId",
+									"value": "1"
+								},
+								{
+									"key": "Name",
+									"value": "Khin%20Nwe%20Oo"
+								},
+								{
+									"key": "PhNo",
+									"value": "0978654321"
+								},
+								{
+									"key": "TotalAmount",
+									"value": "30000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Apr 2023 18:13:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"evoucherId\": 1,\n    \"paymentId\": 1,\n    \"name\": \"Khin Nwe Oo\",\n    \"phNo\": \"0978654321\",\n    \"totalAmount\": 30000,\n    \"disAmount\": 3000,\n    \"amount\": 27000,\n    \"promocode\": \"PROKh124000\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GetUseOrUnusedEvouchers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbkBnbWFpbC5jb20iLCJuYmYiOjE2ODIyMTg3NzMsImV4cCI6MTY4MjMwNTE3MywiaWF0IjoxNjgyMjE4NzczfQ.AeLi5ing4Z5zeEFJvl22XxmWXQ_UVmMIvJMoCLOIU7VAUfhDltYFzI3Rb36Ja6QRfNRhCqIt8ah9pCQSUk8ghw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7284/api/EStoreAPI/GetUseOrUnusedEvouchers?inuse=true",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7284",
+					"path": [
+						"api",
+						"EStoreAPI",
+						"GetUseOrUnusedEvouchers"
+					],
+					"query": [
+						{
+							"key": "inuse",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetUseOrUnusedEvouchers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7284/api/EStoreAPI/GetUseOrUnusedEvouchers?inuse=false",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7284",
+							"path": [
+								"api",
+								"EStoreAPI",
+								"GetUseOrUnusedEvouchers"
+							],
+							"query": [
+								{
+									"key": "inuse",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Apr 2023 18:17:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"promoCode\": \"b8c6d27c-ac10-4a9b-8243-ca612e6e12ab\",\n        \"title\": \"Summer Promo\",\n        \"description\": \"Summer Promo\",\n        \"expDate\": \"2023-04-23T06:21:17.483Z\",\n        \"image\": \"string\",\n        \"amount\": 50000,\n        \"qty\": 20,\n        \"isActive\": true,\n        \"paymentId\": 2,\n        \"name\": \"Phyu Phyu\",\n        \"phNo\": \"097886544\",\n        \"maxVouLimit\": 10,\n        \"inuse\": false\n    }\n]"
+				}
+			]
+		}
+	]
+}
